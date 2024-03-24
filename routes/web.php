@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\ExperienceController;
-use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\Web\ExperienceController;
+use App\Http\Controllers\Web\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
