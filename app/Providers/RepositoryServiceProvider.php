@@ -3,7 +3,9 @@
 namespace App\Providers;
 
 use App\Interfaces\ExperienceRepositoryInterface;
+use App\Interfaces\ProjectRepositoryInterface;
 use App\Repositories\ExperienceRepository;
+use App\Repositories\ProjectRepository;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -14,6 +16,7 @@ class RepositoryServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->bind(ExperienceRepositoryInterface::class, ExperienceRepository::class);
+        $this->app->bind(ProjectRepositoryInterface::class, ProjectRepository::class);
     }
 
     /**
